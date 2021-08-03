@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .search {
+        width: 30%;
+        height: 30px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        position: relative;
+      }
+      .content {
+        width: 80%;
+        margin: auto;
+      }
+
+      #subD {
+        border: 1px solid black;
+        box-shadow: 0px 0px 5px black;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .suggestion {
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 34px;
+        position: absolute;
+        margin-left: -38px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <input
+        type="text"
+        name=""
+        id="search"
+        class="search"
+        placeholder="Search Google or type a URL"
+      />
+      <i
+        onclick="throttleFunction()"
+        class="fa fa-search icon"
+        style="font-size: 36px"
+      ></i>
+      <div class="suggestion" id="suggestion"></div>
+      <div class="content" id="content"></div>
+    </div>
+  </body>
+</html>
+<script src="Home.js"></script>
